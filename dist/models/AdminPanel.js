@@ -9,32 +9,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.adminapp = void 0;
+exports.AdminPanel = void 0;
 // src/models/AdminPanel.ts
 const typeorm_1 = require("typeorm");
-let adminapp = class adminapp {
-    constructor() {
-        this.nom_page = '';
-        this.role_pag = '';
-    }
+let AdminPanel = class AdminPanel {
 };
-exports.adminapp = adminapp;
+exports.AdminPanel = AdminPanel;
 __decorate([
     (0, typeorm_1.PrimaryGeneratedColumn)(),
     __metadata("design:type", Number)
-], adminapp.prototype, "id", void 0);
+], AdminPanel.prototype, "id", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], adminapp.prototype, "nom_page", void 0);
+], AdminPanel.prototype, "nom_page", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", Number)
-], adminapp.prototype, "stat_admi", void 0);
+], AdminPanel.prototype, "stat_admi", void 0);
 __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
-], adminapp.prototype, "role_pag", void 0);
-exports.adminapp = adminapp = __decorate([
-    (0, typeorm_1.Entity)()
-], adminapp);
+], AdminPanel.prototype, "role_pag", void 0);
+exports.AdminPanel = AdminPanel = __decorate([
+    (0, typeorm_1.Entity)('adminpanel')
+], AdminPanel);
